@@ -8,7 +8,7 @@
 
     <!--文字字体基类-->
     <style name="BaseTextViewStyle">
-        <item name="android:lineSpacingMultiplier">1.2</item>
+        <item name="android:lineSpacingMultiplier">1.4</item>
         <item name="android:includeFontPadding">false</item>
     </style>
 
