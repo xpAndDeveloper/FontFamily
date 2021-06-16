@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright(c) 2017, 2021,supersg.cn. All Rights Reserved.
+  ~ 版权说明：本软件属于四川神龟科技有限公司所有，在未获得四川神龟科技有限公司正式授权下，
+  ~ 任何企业和个人，不能获取、阅读、安装、传播本软件涉及的任何知识产权保护的内容。
+  -->
+
+<resources>
+
+    <!--文字字体基类-->
+    <style name="BaseTextViewStyle">
+        <item name="android:lineSpacingMultiplier">1.2</item>
+    </style>
+
+    <!--文字细体-->
+    <style name="BaseTextViewStyle.Light" parent="BaseTextViewStyle">
+        <item name="android:fontFamily">@font/notosanshans_light</item>
+    </style>
+
+    <!--文字Medium-->
+    <style name="BaseTextViewStyle.Medium" parent="BaseTextViewStyle">
+        <item name="android:fontFamily">@font/notosanshans_medium</item>
+    </style>
+
+    <!--文字普通-->
+    <style name="BaseTextViewStyle.Regula" parent="BaseTextViewStyle">
+        <item name="android:fontFamily">@font/notosanshans_regula</item>
+    </style>
+
+    <!--数字字体粗体-->
+    <style name="NumBold">
+        <item name="android:fontFamily">@font/din_alternate_bold</item>
+    </style>
+    <!--数字字体细体-->
+    <style name="NumRegular">
+        <item name="android:fontFamily">@font/din_regular</item>
+    </style>
+</resources>
