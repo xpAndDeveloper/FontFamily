@@ -3,7 +3,7 @@ package com.css.fontfamilylib
 import android.content.res.AssetManager
 import android.graphics.Typeface
 import android.widget.TextView
-import androidx.core.content.ContextCompat
+import androidx.core.content.res.ResourcesCompat
 import com.css.fontfamily.R
 
 /**
@@ -22,10 +22,11 @@ enum class FontType{
  */
 fun TextView.setFontFamily(fontType:FontType){
     try {
+        val mgr: AssetManager = this.context.assets
         val tf = when(fontType){
-            FontType.Light -> Typeface.defaultFromStyle(R.style.BaseTextViewStyle_Light)
-            FontType.Medium ->Typeface.defaultFromStyle(R.style.BaseTextViewStyle_Medium)
-            FontType.Regula ->Typeface.defaultFromStyle(R.style.BaseTextViewStyle_Regula)
+            FontType.Light -> ResourcesCompat.getFont(this.context, R.font.md_font_family_light)
+            FontType.Medium -> ResourcesCompat.getFont(this.context, R.font.md_font_family_medium)
+            FontType.Regula -> ResourcesCompat.getFont(this.context, R.font.md_font_family_regula)
         }
         this.typeface = tf
     } catch (e: Exception) {

@@ -13,6 +13,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.content_main)
-        findViewById<TextView>(R.id.text).setFontFamily(FontType.Medium)
+        findViewById<TextView>(R.id.text).setFontFamily(FontType.Light)
     }
 }

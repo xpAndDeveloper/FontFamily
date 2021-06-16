@@ -14,25 +14,25 @@
 
     <!--文字细体-->
     <style name="BaseTextViewStyle.Light" parent="BaseTextViewStyle">
-        <item name="android:fontFamily">@font/notosanshans_light</item>
+        <item name="android:fontFamily">@font/md_font_family_light</item>
     </style>
 
     <!--文字Medium-->
     <style name="BaseTextViewStyle.Medium" parent="BaseTextViewStyle">
-        <item name="android:fontFamily">@font/notosanshans_medium</item>
+        <item name="android:fontFamily">@font/md_font_family_medium</item>
     </style>
 
     <!--文字普通-->
     <style name="BaseTextViewStyle.Regula" parent="BaseTextViewStyle">
-        <item name="android:fontFamily">@font/notosanshans_regula</item>
+        <item name="android:fontFamily">@font/md_font_family_regula</item>
     </style>
 
     <!--数字字体粗体-->
     <style name="NumBold">
-        <item name="android:fontFamily">@font/din_alternate_bold</item>
+        <item name="android:fontFamily">@font/md_font_family_din_alternate</item>
     </style>
     <!--数字字体细体-->
     <style name="NumRegular">
-        <item name="android:fontFamily">@font/din_regular</item>
+        <item name="android:fontFamily">@font/md_font_family_din_regular</item>
     </style>
 </resources>
