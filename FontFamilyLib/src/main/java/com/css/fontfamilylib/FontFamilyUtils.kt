@@ -1,5 +1,6 @@
 package com.css.fontfamilylib
 
+import android.content.Context
 import android.content.res.AssetManager
 import android.graphics.Typeface
 import android.widget.TextView
@@ -22,7 +23,6 @@ enum class FontType{
  */
 fun TextView.setFontFamily(fontType:FontType){
     try {
-        val mgr: AssetManager = this.context.assets
         val tf = when(fontType){
             FontType.Light -> ResourcesCompat.getFont(this.context, R.font.md_font_family_light)
             FontType.Medium -> ResourcesCompat.getFont(this.context, R.font.md_font_family_medium)
@@ -31,5 +31,20 @@ fun TextView.setFontFamily(fontType:FontType){
         this.typeface = tf
     } catch (e: Exception) {
         //
+    }
+}
+
+/**
+ * 根据type 获取TypeFace
+ */
+fun Context.getTypeFace(fontType:FontType):Typeface?{
+    return try {
+        when(fontType){
+            FontType.Light -> ResourcesCompat.getFont(this, R.font.md_font_family_light)
+            FontType.Medium -> ResourcesCompat.getFont(this, R.font.md_font_family_medium)
+            FontType.Regula -> ResourcesCompat.getFont(this, R.font.md_font_family_regula)
+        }
+    } catch (e: Exception) {
+        null
     }
 }
